@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="wyP-k8-yQm" customClass="StatusFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="279" height="38"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnR-uJ-sFc">
+                    <rect key="frame" x="40" y="6.5" width="60" height="25"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="BWQ-S3-PBH"/>
+                        <constraint firstAttribute="height" constant="25" id="qd5-nA-qMb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="4" image="statusdetail_icon_retweet">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZ9-T4-Qi7">
+                    <rect key="frame" x="109.5" y="11" width="60" height="16"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="bNn-h2-r9n"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="5" image="statusdetail_icon_comment">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ow-lt-xHZ">
+                    <rect key="frame" x="179.5" y="6.5" width="60" height="25"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="gIe-49-KGU"/>
+                        <constraint firstAttribute="width" constant="60" id="zxk-vj-wLV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="3" image="statusdetail_icon_like">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="tZ9-T4-Qi7" firstAttribute="centerY" secondItem="wyP-k8-yQm" secondAttribute="centerY" id="74g-oe-IL2"/>
+                <constraint firstItem="2ow-lt-xHZ" firstAttribute="centerX" secondItem="wyP-k8-yQm" secondAttribute="centerX" multiplier="1.5" id="7x8-sL-2XW"/>
+                <constraint firstItem="tZ9-T4-Qi7" firstAttribute="centerX" secondItem="wyP-k8-yQm" secondAttribute="centerX" id="HQc-uV-Xsp"/>
+                <constraint firstItem="cnR-uJ-sFc" firstAttribute="centerY" secondItem="wyP-k8-yQm" secondAttribute="centerY" id="UzP-Qn-8aC"/>
+                <constraint firstItem="2ow-lt-xHZ" firstAttribute="centerY" secondItem="wyP-k8-yQm" secondAttribute="centerY" id="hTx-oQ-Q0z"/>
+                <constraint firstItem="cnR-uJ-sFc" firstAttribute="centerX" secondItem="wyP-k8-yQm" secondAttribute="centerX" multiplier="0.5" id="hm1-jY-Vwv"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="comment" destination="tZ9-T4-Qi7" id="tLL-4a-Fub"/>
+                <outlet property="like" destination="2ow-lt-xHZ" id="n37-T9-oC6"/>
+                <outlet property="reTwitter" destination="cnR-uJ-sFc" id="vYK-xI-Kaf"/>
+            </connections>
+            <point key="canvasLocation" x="403.5" y="106"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="statusdetail_icon_comment" width="14" height="14"/>
+        <image name="statusdetail_icon_like" width="14" height="14"/>
+        <image name="statusdetail_icon_retweet" width="14" height="14"/>
+    </resources>
+</document>
